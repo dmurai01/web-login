@@ -1,0 +1,20 @@
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Arquivos temporários de editores
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Arquivos de build (caso adicione futuramente)
+dist/
+build/
+
+# Dependências Node.js (caso use futuramente)
+node_modules/ 
