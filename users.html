@@ -5,30 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bem-vindo</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- MaterializeCSS CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Bem-vindo!</h1>
-    <div id="userInfo">
-      <!-- Dados do usuário logado serão inseridos aqui via JS -->
-    </div>
-    <table id="usersTable" style="display:none;">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Nome</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-    <div class="links">
-      <a href="update-password.html" id="linkAlterarSenha" style="display:none;">Alterar Senha</a>
-      <span>|</span>
-      <a href="index.html" id="logoutBtn">Sair</a>
+    <div class="row">
+      <div class="col s12 m8 offset-m2">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title center-align">Bem-vindo!</span>
+            <div id="userInfo">
+              <!-- Dados do usuário logado serão inseridos aqui via JS -->
+            </div>
+            <table id="usersTable" class="highlight responsive-table" style="display:none; margin-top: 24px;">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nome</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <div class="links center-align" style="margin-top: 24px;">
+              <a href="update-password.html" id="linkAlterarSenha" style="display:none;">Alterar Senha</a>
+              <span>|</span>
+              <a href="index.html" id="logoutBtn">Sair</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="js/api.js"></script>
   <script src="js/main.js"></script>
 </body>
-</html> 
+</html>

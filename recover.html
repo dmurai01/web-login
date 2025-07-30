@@ -5,21 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recuperar Senha</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- MaterializeCSS CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Recuperar Senha</h1>
-    <form id="recoverForm">
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
-      <button type="submit">Recuperar</button>
-    </form>
-    <div class="links">
-      <a href="index.html">Voltar ao Login</a>
+    <div class="row">
+      <div class="col s12 m6 offset-m3">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title center-align">Recuperar Senha</span>
+            <form id="recoverForm">
+              <div class="input-field">
+                <input type="email" id="email" name="email" required>
+                <label for="email">E-mail:</label>
+              </div>
+              <div class="center-align" style="margin-top: 20px;">
+                <button type="submit" class="btn waves-effect waves-light">Recuperar</button>
+              </div>
+            </form>
+            <div class="links center-align" style="margin-top: 20px;">
+              <a href="index.html">Voltar ao Login</a>
+            </div>
+            <div id="recoverMessage" class="center-align" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="recoverMessage"></div>
   </div>
   <script src="js/api.js"></script>
   <script src="js/main.js"></script>
 </body>
-</html> 
+</html>

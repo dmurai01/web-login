@@ -5,25 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- MaterializeCSS CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Cadastro</h1>
-    <form id="registerForm">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="senha">Senha:</label>
-      <input type="password" id="senha" name="senha" required>
-      <button type="submit">Cadastrar</button>
-    </form>
-    <div class="links">
-      <a href="index.html">Já tem conta? Login</a>
+    <div class="row">
+      <div class="col s12 m6 offset-m3">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title center-align">Cadastro</span>
+            <form id="registerForm">
+              <div class="input-field">
+                <input type="text" id="nome" name="nome" required>
+                <label for="nome">Nome:</label>
+              </div>
+              <div class="input-field">
+                <input type="email" id="email" name="email" required>
+                <label for="email">E-mail:</label>
+              </div>
+              <div class="input-field">
+                <input type="password" id="senha" name="senha" required>
+                <label for="senha">Senha:</label>
+              </div>
+              <div class="center-align" style="margin-top: 20px;">
+                <button type="submit" class="btn waves-effect waves-light">Cadastrar</button>
+              </div>
+            </form>
+            <div class="links center-align" style="margin-top: 20px;">
+              <a href="index.html">Já tem conta? Login</a>
+            </div>
+            <div id="registerMessage" class="center-align" style="margin-top: 15px;"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="registerMessage"></div>
   </div>
   <script src="js/api.js"></script>
   <script src="js/main.js"></script>
 </body>
-</html> 
+</html>
