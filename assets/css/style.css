@@ -17,7 +17,13 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 24px;
-  color: #2d3a4b;
+  color: #8e24aa;
+}
+
+h2 {
+  margin-bottom: 24px;
+  font-weight: bold;
+  color: #8e24aa;
 }
 
 form {
@@ -62,13 +68,17 @@ button:hover {
 }
 
 .links a {
-  color: #1976d2;
+  color: #8e24aa !important;
   text-decoration: none;
   margin: 0 4px;
 }
 
 .links a:hover {
   text-decoration: underline;
+}
+
+.links span {
+  color: #b39ddb !important;
 }
 
 #loginMessage, #registerMessage, #updatePasswordMessage, #recoverMessage {
@@ -91,4 +101,16 @@ table th, table td {
 
 table th {
   background: #f0f4f8;
-} 
+}
+
+/* Detalhes em roxo para inputs e links */
+.input-field input:focus + label {
+  color: #8e24aa !important;
+}
+.input-field input:focus {
+  border-bottom: 2px solid #8e24aa !important;
+  box-shadow: 0 1px 0 0 #8e24aa !important;
+}
+.btn, .btn:focus, .btn:hover {
+  background-color: #8e24aa !important;
+}
