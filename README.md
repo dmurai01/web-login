@@ -18,7 +18,7 @@ Construir uma aplicação web em HTML e CSS que consome a API REST (api-login) r
 ## Estrutura de Pastas
 ```
 web-login/
-│
+│ 
 ├── index.html            # Página inicial (login)
 ├── register.html         # Tela de cadastro
 ├── users.html            # Listagem de usuários
